@@ -1,0 +1,70 @@
+.header__middle {
+  padding-top: 2.7rem;
+  padding-bottom: 2rem;
+
+  &-container {
+    @include flex-all-sb;
+  }
+
+  &-list {
+    @include flex-column;
+    gap: 1.3rem;
+  }
+
+  &-item {
+    @include flex-column;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: var(--black-color);
+  }
+
+  &-number {
+    color: var(--accent-color);
+  }
+
+  &-logo {
+    width: 30.8rem;
+  }
+
+  &-right {
+    @include flex-column;
+    align-items: flex-end;
+    gap: .7rem;
+  }
+
+  &-search {
+    position: relative;
+  }
+
+  &-input {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    border: .1rem solid #e3e3e3;
+    width: 15.7rem;
+    height: 2.1rem;
+  }
+
+  &-btn {
+    position: absolute;
+    top: .3rem;
+    right: .6rem;
+    background: url("../img/search-icon.svg") no-repeat;
+    background-size: cover;
+    width: 1.4rem;
+    height: 1.7rem;
+  }
+
+  &-cart {
+    display: inline-flex;
+    justify-content: flex-end;
+    background-color: var(--accent-color);
+    width: 4rem;
+    padding: .3rem .5rem;
+
+    &-img {
+      width: 1.4rem;
+    }
+  }
+}

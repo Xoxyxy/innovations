@@ -1,0 +1,21 @@
+.nav {
+  &__list {
+    @include flex-align-center;
+    gap: 3rem;
+  }
+
+  &__item:first-child {
+    margin-right: -1rem;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: var(--light-color);
+  }
+
+  &__home-icon {
+    width: 1.4rem;
+  }
+}

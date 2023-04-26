@@ -1,0 +1,21 @@
+.header__top {
+  padding-top: 1.4rem;
+  padding-bottom: .3rem;
+  border-bottom: .1rem solid #f4f3f3;
+
+  &-container {
+    @include flex-all-center;
+    gap: 2.5rem;
+  }
+
+  &-img {
+    width: 11.6rem;
+  }
+
+  &-info {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--black-color);
+  }
+}
