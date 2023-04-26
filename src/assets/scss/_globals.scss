@@ -1,8 +1,28 @@
 html {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(100vw / 1920 * 10);
   box-sizing: border-box;
   height: 100%;
+
+  @include small-desktop {
+    font-size: calc(100vw / 1024 * 8);
+  }
+
+  @include tablet {
+    font-size: calc(100vw / 768 * 8);
+  }
+
+  @include small-tablet {
+    font-size: calc(100vw / 576 * 8);
+  }
+
+  @include mobile {
+    font-size: calc(100vw / 420 * 8);
+  }
+
+  @include small-mobile {
+    font-size: calc(100vw / 320 * 8);
+  }
 }
 
 *,
@@ -13,7 +33,7 @@ html {
 
 .body {
   margin: 0;
-  min-width: 320px;
+  min-width: 32rem;
   min-height: 100%;
 }
 
@@ -48,7 +68,7 @@ input {
   appearance: none;
   border: none;
   border-radius: 0;
-  background-color: #fff;
+  background-color: var(--light-color);
 }
 
 .list-reset {
@@ -58,7 +78,7 @@ input {
 }
 
 .container {
-  max-width:  calc(var(--container-width) + (var(--container-padding) * 2));
+  max-width: calc(var(--container-width) + (var(--container-padding) * 2));
   padding: 0 var(--container-padding);
   margin: 0 auto;
 }
