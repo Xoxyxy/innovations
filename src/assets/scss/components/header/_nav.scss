@@ -1,11 +1,28 @@
 .nav {
+  @include small-tablet {
+    position: fixed;
+    inset: 0;
+    background-color: var(--accent-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease-out, visibility .25s ease-out;
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &__list {
     @include flex-align-center;
     gap: 3rem;
-  }
 
-  &__item:first-child {
-    margin-right: -1rem;
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: 2rem;
+    }
   }
 
   &__link {
@@ -13,6 +30,12 @@
     font-size: 1.1rem;
     line-height: 1.2rem;
     color: var(--light-color);
+
+    @include small-tablet {
+      display: block;
+      font-size: 2rem;
+      line-height: 200%;
+    }
   }
 
   &__home-icon {

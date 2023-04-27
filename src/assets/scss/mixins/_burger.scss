@@ -1,9 +1,11 @@
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 20px;
-  --burger-line-height: 2px;
+  --burger-width: 3rem;
+  --burger-height: 1.5rem;
+  --burger-line-height: .2rem;
 
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
   border: none;
   color: var(--light-color);
   width: var(--burger-width);
@@ -11,6 +13,10 @@
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+
+  @include small-mobile {
+    right: 3rem;
+  }
 
   &::before,
   &::after {
@@ -47,6 +53,8 @@
   }
 
   &--active {
+    top: -12rem;
+
     .burger__line {
       transform: scale(0);
       transition-duration: .1s;

@@ -1,12 +1,10 @@
 <div class="header__bottom">
-  <div class="container">
-    <nav class="nav header__bottom-nav">
+  <div class="container header__bottom-container">
+    <a href="/" class="header__bottom-link">
+      <img loading="lazy" src="./img/home-icon.svg" class="nav__home-icon" width="15" height="15" alt="Дом">
+    </a>
+    <nav class="nav header__bottom-nav" data-burger="menu">
       <ul class="nav__list list-reset">
-        <li class="nav__item">
-          <a href="/" class="nav__link">
-            <img loading="lazy" src="./img/home-icon.svg" class="nav__home-icon" width="15" height="15" alt="Дом">
-          </a>
-        </li>
         <li class="nav__item">
           <a href="/" class="nav__link">
             Каталог
@@ -39,5 +37,8 @@
         </li>
       </ul>
     </nav>
+    <button class="burger header__bottom-burger" data-burger="btn" aria-label="Открыть меню">
+      <span class="burger__line"></span>
+    </button>
   </div>
 </div>
