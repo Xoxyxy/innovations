@@ -1,0 +1,38 @@
+.hero {
+  background: url("../img/hero-bg-img.jpg") no-repeat center / cover;
+  min-height: 51rem;
+  padding-top: 4.9rem;
+
+  @include tablet {
+    min-height: 42.5rem;
+  }
+
+  &__container {
+    @include mobile {
+      @include flex-all-center;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    width: 43.5rem;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    text-transform: uppercase;
+    color: var(--light-color);
+
+    @include mobile {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+div.hero__title {
+  max-width: 41rem;
+}

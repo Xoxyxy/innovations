@@ -21,7 +21,7 @@ html {
   }
 
   @include small-mobile {
-    font-size: calc(100vw / 300 * 10);
+    font-size: calc(100vw / 320 * 10);
   }
 }
 
@@ -36,6 +36,10 @@ html {
   min-width: 32rem;
   min-height: 100%;
   overflow-x: hidden;
+
+  &--fixed {
+    overflow-y: hidden;
+  }
 }
 
 img {
