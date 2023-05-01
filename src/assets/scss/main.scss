@@ -4,5 +4,8 @@
 @import "globals";
 
 // components
+@import "./components/globals/section";
+
 @import "./components/header/header";
 @import "./components/hero/hero";
+@import "./components/catalog/catalog";

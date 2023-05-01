@@ -1,0 +1,15 @@
+.section {
+  &-top {
+    background: var(--bg-gradient-color);
+    padding: .8rem 0;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+  }
+}

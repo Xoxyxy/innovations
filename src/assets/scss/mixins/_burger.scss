@@ -14,10 +14,6 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include small-mobile {
-    right: 3rem;
-  }
-
   &::before,
   &::after {
     content: "";

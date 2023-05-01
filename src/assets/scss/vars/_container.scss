@@ -1,4 +1,8 @@
 :root {
-  --container-width: 104.8rem;
+  --container-width: 101rem;
   --container-padding: 1.5rem;
+
+  @include small-desktop {
+    --container-width: 90rem;
+  }
 }
