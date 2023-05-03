@@ -1,0 +1,74 @@
+.leaders {
+  background-color: var(--grey-color);
+
+  &__inner {
+    padding-top: 6.2rem;
+    padding-bottom: 8.6rem;
+
+    @include mobile {
+      padding-top: 3.2rem;
+      padding-bottom: 4.6rem;
+    }
+  }
+
+  &__list {
+    @include flex-all-center;
+    gap: 3.6rem;
+    flex-wrap: wrap;
+
+    @include mobile {
+      gap: 1.5rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    @include flex-column;
+    justify-content: flex-end;
+    background-color: var(--light-color);
+    border: .1rem solid var(--accent-color);
+    text-align: center;
+    width: 17.6rem;
+    min-height: 26.8rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex-all-center;
+    font-weight: 700;
+    width: 10.8rem;
+    height: 5.6rem;
+    background: url("../img/icons/decor-icon.svg") no-repeat center / cover;
+
+    &-text {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--light-color);
+      max-width: 6.6rem;
+    }
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: var(--black-color);
+    margin-bottom: .5rem;
+  }
+
+  &__link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
+    background-color: var(--accent-color);
+    padding: .3rem 3.2rem;
+  }
+}
