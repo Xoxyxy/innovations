@@ -4,10 +4,11 @@
 @import "globals";
 
 // components
-@import "./components/globals/section";
+@import "./components/globals/globals";
 
 @import "./components/header/header";
 @import "./components/hero/hero";
 @import "./components/catalog/catalog";
 @import "./components/leaders/leaders";
 @import "./components/clients/clients";
+@import "./components/diagnostic/diagnostic";
