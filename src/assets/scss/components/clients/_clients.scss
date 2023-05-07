@@ -1,34 +1,12 @@
 .clients {
   &__inner {
-    padding-top: .9rem;
-    padding-bottom: 2.6rem;
+    padding-top: 9px;
+    padding-bottom: 26px;
   }
 
   &__list {
     @include flex-all-center;
-    gap: 1rem;
+    gap: 10px;
     flex-wrap: wrap;
-  }
-
-  &__img {
-    &-1 {
-      width: 18.5rem;
-    }
-
-    &-2 {
-      width: 18.1rem;
-    }
-
-    &-3 {
-      width: 14.9rem;
-    }
-
-    &-4 {
-      width: 21.6rem;
-    }
-
-    &-5 {
-      width: 23.4rem;
-    }
   }
 }

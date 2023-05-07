@@ -1,10 +1,10 @@
 .hero {
   background: url("../img/hero-bg-img.jpg") no-repeat center / cover;
-  min-height: 51rem;
-  padding-top: 4.9rem;
+  min-height: 510px;
+  padding-top: 49px;
 
   @include tablet {
-    min-height: 42.5rem;
+    min-height: 425px;
   }
 
   &__container {
@@ -15,20 +15,16 @@
     }
   }
 
-  &__logo {
-    width: 43.5rem;
-  }
-
   &__title {
     font-weight: 400;
-    font-size: 4rem;
-    line-height: 4.7rem;
+    font-size: 40px;
+    line-height: 47px;
     text-transform: uppercase;
     color: var(--light-color);
 
     @include mobile {
-      font-size: 3.5rem;
-      line-height: 4rem;
+      font-size: 35px;
+      line-height: 40px;
     }
   }
 }

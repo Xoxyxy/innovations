@@ -16,30 +16,26 @@
 
   &__list {
     @include flex-align-center;
-    gap: 3rem;
+    gap: 30px;
 
     @include small-tablet {
       flex-direction: column;
       justify-content: center;
       height: 100%;
-      gap: 2rem;
+      gap: 20px;
     }
   }
 
   &__link {
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    font-size: 11px;
+    line-height: 12px;
     color: var(--light-color);
 
     @include small-tablet {
       display: block;
-      font-size: 2rem;
+      font-size: 20px;
       line-height: 200%;
     }
-  }
-
-  &__home-icon {
-    width: 1.4rem;
   }
 }

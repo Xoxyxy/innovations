@@ -28,6 +28,7 @@
     "gulp-webp": "^4.0.1",
     "node-w3c-validator": "^2.0.1",
     "normalize.scss": "^0.1.0",
+    "pnpm": "^8.4.0",
     "postcss": "^8.4.5",
     "postcss-scss": "^4.0.2",
     "sass": "^1.45.1",
