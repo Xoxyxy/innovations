@@ -1,32 +1,32 @@
 .diagnostic {
-  background: url("../img/diagnostic-bg-img.jpg") no-repeat center / cover;
   padding-top: 80px;
   padding-bottom: 66px;
   min-height: 557px;
+  background: url("../img/diagnostic-bg-img.jpg") no-repeat center / cover;
 
   &__title {
+    margin-bottom: 16px;
+    max-width: 372px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
     color: var(--accent-color);
-    max-width: 372px;
-    margin-bottom: 16px;
   }
 
   &__subtitle {
+    margin-bottom: 25px;
+    max-width: 168px;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
     color: var(--light-color);
-    max-width: 168px;
-    margin-bottom: 25px;
   }
 
   &__texts {
-    max-width: 330px;
     margin-bottom: 35px;
+    max-width: 330px;
   }
 
   &__text {

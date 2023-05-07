@@ -6,6 +6,7 @@
 
   &__list {
     @include flex-all-center;
+
     gap: 10px;
     flex-wrap: wrap;
   }

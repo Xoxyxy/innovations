@@ -1,6 +1,7 @@
 .catalog {
   &__list {
     @include flex-all-center;
+
     gap: 18px 20px;
     flex-wrap: wrap;
 
@@ -11,8 +12,12 @@
 
   &__link {
     @include flex-all-center;
-    flex-direction: column;
+
     gap: 15px;
+    flex-direction: column;
+    padding: 20px 0 10px;
+    width: 154px;
+    height: 148px;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
@@ -20,9 +25,6 @@
     text-transform: uppercase;
     color: var(--black-color);
     background-color: var(--light-color);
-    padding: 20px 0 10px;
-    width: 154px;
-    height: 148px;
 
     @include small-mobile {
       font-size: 12px;

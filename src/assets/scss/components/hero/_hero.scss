@@ -1,15 +1,12 @@
 .hero {
-  background: url("../img/hero-bg-img.jpg") no-repeat center / cover;
-  min-height: 510px;
   padding-top: 49px;
-
-  @include tablet {
-    min-height: 425px;
-  }
+  min-height: 510px;
+  background: url("../img/hero-bg-img.jpg") no-repeat center / cover;
 
   &__container {
     @include mobile {
       @include flex-all-center;
+
       flex-direction: column;
       text-align: center;
     }
@@ -26,6 +23,10 @@
       font-size: 35px;
       line-height: 40px;
     }
+  }
+
+  @include tablet {
+    min-height: 425px;
   }
 }
 

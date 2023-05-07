@@ -3,8 +3,9 @@
   background-color: var(--accent-color);
 
   &-container {
-    position: relative;
     @include flex-align-center;
+
+    position: relative;
     gap: 20px;
   }
 }

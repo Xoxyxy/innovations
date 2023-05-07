@@ -13,6 +13,7 @@
 
   &__list {
     @include flex-all-center;
+
     gap: 36px;
     flex-wrap: wrap;
 
@@ -22,43 +23,45 @@
   }
 
   &__item {
-    position: relative;
     @include flex-column;
+
+    position: relative;
     justify-content: flex-end;
-    background-color: var(--light-color);
     border: 1px solid var(--accent-color);
-    text-align: center;
+    padding: 25px 15px;
     width: 176px;
     min-height: 268px;
-    padding: 25px 15px;
+    text-align: center;
+    background-color: var(--light-color);
   }
 
   &__decor {
+    @include flex-all-center;
+
     position: absolute;
     top: -10px;
     left: 50%;
-    transform: translateX(-50%);
-    @include flex-all-center;
-    font-weight: 700;
     width: 108px;
     height: 56px;
+    font-weight: 700;
     background: url("../img/icons/decor-icon.svg") no-repeat center / cover;
+    transform: translateX(-50%);
 
     &-text {
+      max-width: 66px;
       font-size: 13px;
       line-height: 15px;
       text-align: center;
       text-transform: uppercase;
       color: var(--light-color);
-      max-width: 66px;
     }
   }
 
   &__descr {
+    margin-bottom: 5px;
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
     color: var(--black-color);
-    margin-bottom: 5px;
   }
 }

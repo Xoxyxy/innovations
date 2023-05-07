@@ -6,28 +6,30 @@
     @include flex-all-sb;
 
     @include small-tablet {
-      flex-direction: column;
       gap: 15px;
+      flex-direction: column;
     }
   }
 
   &-list {
     @include flex-column;
+
     gap: 13px;
 
     @include small-tablet {
-      flex-direction: row;
       gap: 25px;
+      flex-direction: row;
     }
 
     @include small-mobile {
-      flex-direction: column;
       gap: 10px;
+      flex-direction: column;
     }
   }
 
   &-item {
     @include flex-column;
+
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
@@ -46,8 +48,9 @@
 
   &-right {
     @include flex-column;
-    align-items: flex-end;
+
     gap: 7px;
+    align-items: flex-end;
 
     @include small-tablet {
       flex-direction: row;
@@ -60,29 +63,29 @@
   }
 
   &-input {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
     border: 1px solid #e3e3e3;
     width: 157px;
     height: 21px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
   }
 
   &-btn {
     position: absolute;
     top: 3px;
     right: 6px;
-    background: url("../img/icons/search-icon.svg") no-repeat;
-    background-size: cover;
     width: 14px;
     height: 17px;
+    background: url("../img/icons/search-icon.svg") no-repeat;
+    background-size: cover;
   }
 
   &-cart {
     display: inline-flex;
     justify-content: flex-end;
-    background-color: var(--accent-color);
-    width: 40px;
     padding: 3px 5px;
+    width: 40px;
+    background-color: var(--accent-color);
   }
 }

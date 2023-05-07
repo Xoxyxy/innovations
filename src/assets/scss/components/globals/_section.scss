@@ -1,15 +1,15 @@
 .section {
   &-top {
-    background: var(--bg-gradient-color);
     padding: 8px 0;
+    background: var(--bg-gradient-color);
   }
 
   &-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    text-align: center;
     text-transform: uppercase;
     color: var(--light-color);
-    text-align: center;
   }
 }

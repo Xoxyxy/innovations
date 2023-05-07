@@ -1,28 +1,14 @@
 .nav {
-  @include small-tablet {
-    position: fixed;
-    inset: 0;
-    background-color: var(--accent-color);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .25s ease-out, visibility .25s ease-out;
-    overflow-y: auto;
-
-    &--active {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
   &__list {
     @include flex-align-center;
+
     gap: 30px;
 
     @include small-tablet {
+      gap: 20px;
       flex-direction: column;
       justify-content: center;
       height: 100%;
-      gap: 20px;
     }
   }
 
@@ -36,6 +22,21 @@
       display: block;
       font-size: 20px;
       line-height: 200%;
+    }
+  }
+
+  @include small-tablet {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    background-color: var(--accent-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }

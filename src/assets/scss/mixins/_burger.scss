@@ -7,10 +7,10 @@
   top: 0;
   right: 15px;
   border: none;
-  color: var(--light-color);
+  padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  padding: 0;
+  color: var(--light-color);
   background-color: transparent;
   cursor: pointer;
 
@@ -21,50 +21,50 @@
     left: 0;
     width: 100%;
     height: var(--burger-line-height);
-    background-color: currentColor;
+    background-color: currentcolor;
   }
 
   &::before {
     top: 0;
-    transition-duration: .25s;
-    transition: transform .25s, top .25s .25s;
+    transition: transform 0.25s, top 0.25s 0.25s;
+    transition-duration: 0.25s;
   }
 
   &::after {
     top: calc(100% - var(--burger-line-height));
-    transition-duration: .25s;
-    transition: transform .25s, top .25s .25s;
+    transition: transform 0.25s, top 0.25s 0.25s;
+    transition-duration: 0.25s;
   }
 
   &__line {
     position: absolute;
-    left: 0;
     top: 50%;
+    left: 0;
     width: 100%;
     height: var(--burger-line-height);
-    background-color: currentColor;
+    background-color: currentcolor;
     transform: translateY(-50%);
-    transition-duration: .25s;
-    transition-delay: .25s;
+    transition-duration: 0.25s;
+    transition-delay: 0.25s;
   }
 
   &--active {
-    .burger__line {
-      transform: scale(0);
-      transition-duration: .1s;
-      transition-delay: .25s;
-    }
-
     &::before {
       top: 50%;
       transform: rotateZ(-45deg);
-      transition: top .25s, transform .25s .25s;
+      transition: top 0.25s, transform 0.25s 0.25s;
     }
 
     &::after {
       top: 50%;
       transform: rotateZ(45deg);
-      transition: top .4s, transform .25s .25s;
+      transition: top 0.4s, transform 0.25s 0.25s;
+    }
+
+    .burger__line {
+      transform: scale(0);
+      transition-duration: 0.1s;
+      transition-delay: 0.25s;
     }
   }
 }
