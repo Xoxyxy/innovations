@@ -1,8 +1,0 @@
-:root {
-  --container-width: 1010px;
-  --container-padding: 15px;
-
-  @include small-desktop {
-    --container-width: 900px;
-  }
-}

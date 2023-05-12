@@ -1,2 +1,27 @@
-@import "./vars/container";
-@import "./vars/color";
+/* stylelint-disable */
+:root {
+  --container-width: 1010px;
+  --container-padding: 15px;
+
+  @include small-desktop {
+    --container-width: 900px;
+  }
+
+  // colors
+  --light-color: #fff;
+  --black-color: #000;
+  --accent-color: #c50c33;
+  --bg-gradient-color: linear-gradient(
+    90deg,
+    #db0141 17.13%,
+    #bc0941 21.62%,
+    #921541 28.8%,
+    #6f1e42 36.89%,
+    #542642 44.97%,
+    #412b42 52.16%,
+    #352e42 60.24%,
+    #323043 69.22%,
+    #db0141 88.98%
+  );
+  --grey-color: #ece9e9;
+}
