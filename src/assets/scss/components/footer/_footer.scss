@@ -1,0 +1,22 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+.footer {
+  padding-top: 43px;
+  padding-bottom: 21px;
+  background-color: var(--footer-bg-color);
+
+  &__container {
+    @include flex-all-sb;
+
+    gap: 10px;
+
+    @include tablet {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@import "./footer-left";
+@import "./footer-middle";
+@import "./footer-right";

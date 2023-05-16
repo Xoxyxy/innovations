@@ -12,6 +12,10 @@
     line-height: 42px;
     text-transform: uppercase;
     color: var(--accent-color);
+
+    @include small-mobile {
+      font-size: 30px;
+    }
   }
 
   &__subtitle {

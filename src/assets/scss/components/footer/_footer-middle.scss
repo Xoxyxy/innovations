@@ -1,0 +1,36 @@
+.footer {
+  &__middle {
+    @include flex-align-center;
+
+    gap: 62px;
+
+    @include small-tablet {
+      gap: 30px;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    @include flex-column;
+
+    gap: 5px;
+  }
+
+  &__item {
+    @include flex-align-center;
+
+    position: relative;
+  }
+
+  &__middle-icon {
+    position: absolute;
+    left: -19px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--light-color);
+  }
+}
