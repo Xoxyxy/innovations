@@ -1,0 +1,67 @@
+{
+  "section": {
+    "scope": "html",
+    "prefix": "s-section",
+    "body": [
+      "<section class=\"$1\">",
+      " <div class=\"container\"></div>",
+      "</section>"
+    ],
+    "description": "Snippet for burger btn"
+  },
+  "burger": {
+    "scope": "html",
+    "prefix": "s-burger",
+    "body": [
+      "<button class=\"burger\" aria-label=\"Открыть меню\">",
+      "  <span class=\"burger__line\"></span>",
+      "</button>"
+    ],
+    "description": "Snippet for burger btn"
+  },
+  "navigation": {
+    "scope": "html",
+    "prefix": "s-nav",
+    "body": [
+      "<nav class=\"nav\" title=\"$1\">",
+      "  <ul class=\"nav__list\">",
+      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Snippet for navigation"
+  },
+  "basicswiper": {
+    "prefix": "s-swiper",
+    "body": [
+      "<div class=\"swiper $1\">",
+      "  <div class=\"swiper-wrapper\">",
+      "     <div class=\"swiper-slide\">",
+      "     </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Snippet for basic swiper structure"
+  },
+  "picture": {
+    "prefix": "s-picture",
+    "body": [
+      "<picture>",
+      "  <source srcset=\"$1.avif\" type=\"image/avif\">",
+      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
+      "  <img loading=\"lazy\" src=\"$1.$2\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "</picture>"
+    ],
+    "description": "Snippet for pictrue"
+  },
+  "img": {
+    "scope": "html",
+    "prefix": "s-img",
+    "body": [
+      "<img loading=\"lazy\" src=\"$1.$2\" width=\"$4\" height=\"$5\" alt=\"$3\">"
+    ],
+    "description": "Snippet for simple html images"
+  }
+}
