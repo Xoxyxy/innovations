@@ -3,3 +3,8 @@
 @import "./header-bottom";
 @import "./nav";
 @import "./burger";
+
+.header {
+  position: relative;
+  box-shadow: 0 4px 4px #00000040;
+}

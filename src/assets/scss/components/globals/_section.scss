@@ -1,15 +1,31 @@
 .section {
   &-top {
-    padding: 8px 0;
     background: var(--bg-gradient-color);
   }
 
   &-title {
+    color: var(--light-color);
+  }
+
+  &-light-top {
+    background-color: var(--light-color);
+  }
+
+  &-light-title {
+    color: var(--black-color);
+  }
+
+  &-top,
+  &-light-top {
+    padding: 8px 0;
+  }
+
+  &-title,
+  &-light-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: var(--light-color);
   }
 }

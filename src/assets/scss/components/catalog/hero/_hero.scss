@@ -1,0 +1,43 @@
+.hero {
+  padding-top: 32px;
+  padding-bottom: 21px;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+
+  &__container {
+    @include flex-all-sb;
+
+    @include small-tablet {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__left {
+    max-width: 521px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &__img {
+    @include small-tablet {
+      display: none;
+    }
+  }
+}
