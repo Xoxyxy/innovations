@@ -15,8 +15,13 @@
     color: var(--black-color);
   }
 
+  &-grey-top {
+    background-color: var(--grey2-color);
+  }
+
   &-top,
-  &-light-top {
+  &-light-top,
+  &-grey-top {
     padding: 8px 0;
   }
 

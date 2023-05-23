@@ -1,0 +1,31 @@
+.appointment {
+  &__inner {
+    padding-top: 32px;
+    padding-bottom: 107px;
+    background-color: var(--light-color);
+  }
+
+  &__list {
+    @include flex-all-center;
+
+    gap: 33px 21px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @include flex-column;
+
+    max-width: 266px;
+
+    &-content {
+      padding: 21px 23px;
+      min-height: 88px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: var(--light-color);
+      background-color: var(--accent-color);
+    }
+  }
+}
