@@ -62,8 +62,16 @@ input {
   padding: 0;
 }
 
-.container {
+.container-small {
+  max-width: calc(var(--container-small-width) + (var(--container-padding) * 2));
+}
+
+.container-big {
+  max-width: calc(var(--container-big-width) + (var(--container-padding) * 2));
+}
+
+.container-small,
+.container-big {
   margin: 0 auto;
   padding: 0 var(--container-padding);
-  max-width: calc(var(--container-width) + (var(--container-padding) * 2));
 }

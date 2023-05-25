@@ -1,9 +1,13 @@
 .catalog {
   &__list {
-    @include flex-all-center;
+    @include flex-align-center;
 
     gap: 18px 20px;
     flex-wrap: wrap;
+
+    @include tablet {
+      justify-content: center;
+    }
 
     @include mobile {
       gap: 15px;

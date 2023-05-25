@@ -1,10 +1,12 @@
 /* stylelint-disable */
 :root {
-  --container-width: 1010px;
+  --container-small-width: 850px;
+  --container-big-width: 1010px;
   --container-padding: 15px;
 
-  @include small-desktop {
-    --container-width: 900px;
+  @include tablet {
+    --container-small-width: 800px;
+    --container-big-width: 900px;
   }
 
   // colors
