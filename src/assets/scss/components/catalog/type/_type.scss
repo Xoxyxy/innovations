@@ -1,0 +1,11 @@
+.type {
+  &__inner {
+    padding-top: 51px;
+    padding-bottom: 99px;
+    background-color: var(--accent-color);
+  }
+
+  &__text--small {
+    font-size: 12px;
+  }
+}
