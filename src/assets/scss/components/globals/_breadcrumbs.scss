@@ -1,0 +1,39 @@
+.breadcrumb {
+  &__list {
+    @include flex-align-center;
+
+    gap: 0 30px;
+    padding: 17px 0;
+
+    @include small-tablet {
+      @include flex-all-center;
+
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @include small-tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    color: #1e305d;
+
+    &--active {
+      position: relative;
+      color: #c50c33;
+
+      ::after {
+        content: "»";
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(200%);
+      }
+    }
+  }
+}
