@@ -39,6 +39,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "browser-sync": "^2.29.1"
   }
 }
