@@ -1,7 +1,7 @@
 .automated-control {
   &__inner {
     padding: 22px 0 66px;
-    background: #ece9e9;
+    background: var(--grey-color);
   }
 
   &__title {
@@ -27,12 +27,12 @@
     @include flex-column;
 
     border: 1px solid transparent;
-    border-image: linear-gradient(90deg, #c50c33 14.74%, #323043 94.33%);
+    border-image: var(--border-gradient-color);
     border-image-slice: 1;
     padding: 22px 16px;
     max-width: 209px;
     text-align: center;
-    background: #fff;
+    background: var(--light-color);
 
     &-title {
       margin-top: 18px;
@@ -40,15 +40,15 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 15px;
-      color: #000;
+      color: var(--black-color);
     }
 
     &-button {
       display: inline-block;
       padding: 4px;
       width: auto;
-      color: #fff;
-      background: #c50c33;
+      color: var(--light-color);
+      background: var(--accent-color);
     }
   }
 
