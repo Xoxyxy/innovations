@@ -1,0 +1,33 @@
+.wrapper {
+  background-color: var(--grey-color);
+}
+
+.processed-order {
+  &__inner {
+    padding-top: 10px;
+    padding-bottom: 55px;
+  }
+
+  &__container {
+    padding-top: 10px;
+    padding-bottom: 34px;
+    text-align: center;
+    background-color: var(--light-color);
+  }
+
+  &__numb {
+    margin-bottom: 4px;
+    color: var(--accent-color);
+  }
+
+  &__gratitude {
+    color: var(--grey3-color);
+  }
+
+  &__numb,
+  &__gratitude {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}

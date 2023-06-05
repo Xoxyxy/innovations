@@ -62,6 +62,12 @@ input {
   padding: 0;
 }
 
+.wrapper {
+  @include flex-column;
+
+  min-height: 100vh;
+}
+
 .container-small {
   max-width: calc(var(--container-small-width) + (var(--container-padding) * 2));
 }

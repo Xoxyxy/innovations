@@ -2,6 +2,7 @@
   border-bottom: 1px solid #f4f3f3;
   padding-top: 14px;
   padding-bottom: 3px;
+  background-color: var(--light-color);
 
   &-container {
     @include flex-all-center;

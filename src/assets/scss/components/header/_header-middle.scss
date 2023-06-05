@@ -1,6 +1,7 @@
 .header__middle {
   padding-top: 27px;
   padding-bottom: 20px;
+  background-color: var(--light-color);
 
   &-container {
     @include flex-all-sb;
