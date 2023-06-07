@@ -1,0 +1,82 @@
+.mobile-laboratories {
+  background: var(--light-color);
+
+  &__top {
+    background: var(--grey2-color);
+  }
+
+  &__description {
+    margin-top: 25px;
+    margin-bottom: 32px;
+    color: var(--footer-bg-color);
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    max-width: 50%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &__inner {
+    background: var(--grey-color);
+  }
+
+  &__products {
+    @include flex-all-sb;
+
+    gap: 28px 46px;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-bottom: 90px;
+    background: var(--grey-color);
+
+    @include small-tablet {
+      @include flex-justify-center;
+    }
+  }
+
+  &__product {
+    @include flex-column;
+
+    border: 1px solid transparent;
+    border-image: var(--border-gradient-color);
+    border-image-slice: 1;
+    padding: 22px 22px 12px;
+    max-width: 176px;
+    text-align: center;
+    background: var(--light-color);
+
+    &-img {
+      height: 132px;
+    }
+
+    &-title {
+      margin-top: 18px;
+      margin-bottom: 23px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      color: var(--black-color);
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 4px;
+      width: auto;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--light-color);
+      background: var(--accent-color);
+    }
+  }
+}
