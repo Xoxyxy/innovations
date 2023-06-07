@@ -1,0 +1,82 @@
+.ufa-defectoscopist {
+  &__top {
+    background: var(--grey2-color);
+  }
+
+  &__inner {
+    margin-top: 46px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--footer-bg-color);
+
+    &--red {
+      color: var(--accent-color);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: start;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--grey3-color);
+  }
+
+  &__slider {
+    margin-left: 67px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  &__left {
+    max-width: 300px;
+  }
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: none;
+}
+
+.splide-main {
+  &__slide {
+    text-align: center;
+  }
+
+  @include small-tablet {
+    margin-top: 30px;
+  }
+}
+
+.splide-navigation {
+  margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  max-width: 328px;
+}
+
+.splide__arrows {
+  .splide__arrow--prev {
+    left: -3em;
+  }
+
+  .splide__arrow--next {
+    right: -3em;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

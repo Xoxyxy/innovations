@@ -1,66 +1,82 @@
-import { Splide } from '@splidejs/splide'
+import { Splide } from "@splidejs/splide";
 
-document.addEventListener('DOMContentLoaded', function () {
-  const splideMainLab = new Splide('#splide-main-laboratories', {
-    type: 'fade',
-    rewind: true,
-    pagination: false,
-    arrows: false,
-  })
+window.addEventListener("DOMContentLoaded", () => {
 
-  const splideNavLab = new Splide('#splide-navigation-laboratories', {
-    gap: 10,
-    fixedWidth: 172,
-    fixedHeight: 134,
-    rewind: true,
-    pagination: false,
-    perPage: 2,
-    isNavigation: true,
-  })
+  const mainLab = document.querySelector('#splide-main-laboratories');
+  const navLab = document.querySelector('#splide-navigation-laboratories');
 
-  splideMainLab.sync(splideNavLab)
-  splideMainLab.mount()
-  splideNavLab.mount()
+  if (mainLab && navLab) {
+    const splideMainLab = new Splide(mainLab, {
+      type: "fade",
+      rewind: true,
+      pagination: false,
+      arrows: false,
+    });
+  
+    const splideNavLab = new Splide(navLab, {
+      gap: 10,
+      fixedWidth: 172,
+      fixedHeight: 134,
+      rewind: true,
+      pagination: false,
+      perPage: 2,
+      isNavigation: true,
+    });
+  
+    splideMainLab.sync(splideNavLab);
+    splideMainLab.mount();
+    splideNavLab.mount();
+  }
 
-  const splideMainDev = new Splide('#splide-main-develop', {
-    type: 'fade',
-    rewind: true,
-    pagination: false,
-    arrows: false,
-  })
+  const mainDev = document.querySelector('#splide-main-develop');
+  const navDev = document.querySelector('#splide-navigation-develop');
 
-  const splideNavDev = new Splide('#splide-navigation-develop', {
-    gap: 10,
-    fixedWidth: 172,
-    fixedHeight: 134,
-    rewind: true,
-    pagination: false,
-    perPage: 2,
-    isNavigation: true,
-  })
+  if (mainDev && navDev) {
+    const splideMainDev = new Splide("#splide-main-develop", {
+      type: "fade",
+      rewind: true,
+      pagination: false,
+      arrows: false,
+    });
+  
+    const splideNavDev = new Splide("#splide-navigation-develop", {
+      gap: 10,
+      fixedWidth: 172,
+      fixedHeight: 134,
+      rewind: true,
+      pagination: false,
+      perPage: 2,
+      isNavigation: true,
+    });
+  
+    splideMainDev.sync(splideNavDev);
+    splideMainDev.mount();
+    splideNavDev.mount();
+  }
 
-  splideMainDev.sync(splideNavDev)
-  splideMainDev.mount()
-  splideNavDev.mount()
+  const mainInnovator = document.querySelector('#splide-main-innovator');
+  const navInnovator = document.querySelector('#splide-navigation-innovator');
 
-  const splideMainInnovator = new Splide('#splide-main-innovator', {
-    type: 'fade',
-    rewind: true,
-    pagination: false,
-    arrows: false,
-  })
-
-  const splideNavInnovator = new Splide('#splide-navigation-innovator', {
-    gap: 10,
-    fixedWidth: 172,
-    fixedHeight: 134,
-    rewind: true,
-    pagination: false,
-    perPage: 2,
-    isNavigation: true,
-  })
-
-  splideMainInnovator.sync(splideNavInnovator)
-  splideMainInnovator.mount()
-  splideNavInnovator.mount()
-})
+  if (mainInnovator && navInnovator) {
+    const splideMainInnovator = new Splide("#splide-main-innovator", {
+      type: "fade",
+      rewind: true,
+      pagination: false,
+      arrows: false,
+    });
+  
+    const splideNavInnovator = new Splide("#splide-navigation-innovator", {
+      gap: 10,
+      fixedWidth: 172,
+      fixedHeight: 134,
+      rewind: true,
+      pagination: false,
+      perPage: 2,
+      isNavigation: true,
+    });
+  
+    splideMainInnovator.sync(splideNavInnovator);
+    splideMainInnovator.mount();
+    splideNavInnovator.mount();
+  }
+});
