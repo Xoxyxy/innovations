@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+  @include('partials/base/head-catalog.html')
 
-@include('partials/base/head-catalog.html')
+  <body class="body">
+    <div class="wrapper">
+      @include('partials/header/header.html')
 
-<body class="body">
+      <main class="main">
+        @include('partials/catalog/hero/hero.html')
+        @include('partials/catalog/controls/controls.html')
+        @include('partials/catalog/appointment/appointment.html')
+        @include('partials/catalog/type/type.html')
+        @include('partials/catalog/leaders/leaders.html')
+      </main>
 
-  <div class="wrapper">
-
-    @include('partials/header/header.html')
-
-    <main class="main">
-      @include('partials/catalog/hero/hero.html')
-      @include('partials/catalog/controls/controls.html')
-      @include('partials/catalog/appointment/appointment.html')
-      @include('partials/catalog/type/type.html')
-      @include('partials/catalog/leaders/leaders.html')
-    </main>
-
-    @include('partials/footer/footer.html')
-
-  </div>
-
-</body>
-
+      @include('partials/footer/footer.html')
+    </div>
+  </body>
 </html>

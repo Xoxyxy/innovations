@@ -21,11 +21,11 @@
   }
 
   &__link {
-    color: #1e305d;
+    color: var(--black-color);
 
     &--active {
       position: relative;
-      color: #c50c33;
+      color: var(--accent-color);
 
       ::after {
         content: "»";
