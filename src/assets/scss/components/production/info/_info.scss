@@ -70,12 +70,12 @@
 }
 
 .splide-main {
-  @include small-tablet {
-    margin-top: 30px;
-  }
-
   &__slide {
     text-align: center;
+  }
+
+  @include small-tablet {
+    margin-top: 30px;
   }
 }
 
@@ -87,15 +87,15 @@
 }
 
 .splide__arrows {
-  @include mobile {
-    display: none;
-  }
-
   .splide__arrow--prev {
     left: -3em;
   }
 
   .splide__arrow--next {
     right: -3em;
+  }
+
+  @include mobile {
+    display: none;
   }
 }
