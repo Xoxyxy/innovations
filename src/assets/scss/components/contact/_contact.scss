@@ -1,0 +1,109 @@
+.contact {
+  &__top {
+    background: var(--grey2-color);
+  }
+
+  &__inner {
+    margin-top: 7px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--footer-bg-color);
+  }
+
+  &__maps {
+    margin-top: 11px;
+  }
+
+  &__data {
+    @include flex-all-sb;
+
+    position: relative;
+    padding-top: 33px;
+    padding-bottom: 33px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 332px;
+      height: 1px;
+      background: #000;
+
+      @include small-tablet {
+        width: 100%;
+      }
+    }
+
+    &-description {
+      max-width: 292px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--footer-bg-color);
+    }
+
+    &-time {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &-address {
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--grey3-color);
+    }
+
+    &-phone {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--accent-color);
+    }
+
+    &-mail {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--grey3-color);
+    }
+
+    @include small-tablet {
+      @include flex-column;
+
+      text-align: center;
+    }
+  }
+
+  &__map {
+    margin-left: 82px;
+    width: 482px;
+    height: 220px;
+    background: var(--grey3-color);
+
+    @include small-tablet {
+      margin: 0 auto;
+      margin-top: 15px;
+      max-width: 482px;
+    }
+
+    @include mobile {
+      max-width: 400px;
+    }
+  }
+}
