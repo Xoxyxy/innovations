@@ -91,6 +91,8 @@
   }
 
   &__map {
+    position: relative;
+    margin: 0 auto;
     margin-left: 82px;
     width: 482px;
     height: 220px;
@@ -104,6 +106,12 @@
 
     @include mobile {
       max-width: 400px;
+    }
+
+    @include small-mobile {
+      margin: 0;
+      margin-top: 15px;
+      max-width: 300px;
     }
   }
 }
