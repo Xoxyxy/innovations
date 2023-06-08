@@ -1,0 +1,14 @@
+/* stylelint-disable at-rule-empty-line-before */
+@import "mixins";
+@import "vars";
+@import "fonts";
+@import "globals";
+
+// components
+@import "./components/globals/globals";
+
+@import "./components/header/header";
+
+@import "./components/delivery-geography/delivery-geography";
+
+@import "./components/footer/footer";
