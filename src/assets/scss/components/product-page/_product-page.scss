@@ -1,0 +1,135 @@
+.product-page {
+  &__top {
+    background: var(--grey2-color);
+  }
+
+  &__inner {
+    margin-top: 26px;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--footer-bg-color);
+  }
+
+  &__data {
+    display: flex;
+    align-items: start;
+
+    @include small-tablet {
+      @include flex-column;
+    }
+  }
+
+  &__description {
+    padding-right: 54px;
+    padding-left: 22px;
+
+    &-title {
+      margin-bottom: 5px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--footer-bg-color);
+    }
+  }
+
+  &__prices {
+    @include small-tablet {
+      margin: 0 auto;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--grey3-color);
+  }
+
+  &__price {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--footer-bg-color);
+
+    &-description {
+      padding: 39px 26px 43px;
+      width: 231px;
+      text-align: center;
+      background: var(--grey2-color);
+    }
+
+    &-title {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--footer-bg-color);
+    }
+
+    &-button {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 4px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+      color: var(--light-color);
+      background: var(--accent-color);
+    }
+  }
+
+  &__links {
+    margin: 0 auto;
+    margin-top: 17px;
+    max-width: 130px;
+
+    &-title {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 13px;
+      text-align: center;
+      color: var(--accent-color);
+    }
+  }
+
+  &__contacts {
+    @include flex-all-center;
+
+    gap: 0 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: none;
+}
+
+.splide-main {
+  &__slide {
+    text-align: center;
+  }
+
+  @include small-tablet {
+    margin-top: 30px;
+  }
+}
+
+.splide-navigation {
+  margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  max-width: 278px;
+}
+
+.splide__arrows {
+  display: none;
+}
