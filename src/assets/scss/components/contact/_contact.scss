@@ -26,17 +26,20 @@
     padding-top: 33px;
     padding-bottom: 33px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 332px;
-      height: 1px;
-      background: #000;
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -2%;
+        width: 332px;
+        height: 1px;
+        background: #000;
 
-      @include small-tablet {
-        width: 100%;
+        @include small-tablet {
+          left: 0;
+          width: 100%;
+        }
       }
     }
 
@@ -59,28 +62,70 @@
     }
 
     &-address {
+      position: relative;
+      display: block;
       margin-bottom: 5px;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: var(--grey3-color);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5%;
+        left: -6%;
+        width: 11px;
+        height: 14px;
+        background: url("../../img/icons/contact/mark-icon.svg");
+      }
     }
 
     &-phone {
+      position: relative;
       display: block;
       margin-bottom: 5px;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: var(--accent-color);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5%;
+        left: -6%;
+        width: 10px;
+        height: 13px;
+        background: url("../../img/icons/contact/tel-icon-contact.svg");
+
+        @include small-tablet {
+          left: 20%;
+        }
+      }
     }
 
     &-mail {
+      position: relative;
       display: block;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: var(--grey3-color);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 18%;
+        left: -7%;
+        width: 15px;
+        height: 10px;
+        background: url("../../img/icons/contact/mail-icon-contact.svg");
+
+        @include small-tablet {
+          left: 12%;
+        }
+      }
     }
 
     @include small-tablet {
