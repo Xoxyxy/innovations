@@ -1,0 +1,68 @@
+<div class="ordering__inner">
+  <div class="container-big ordering__container">
+    <div class="ordering__left">
+      <form id="ordering" class="ordering__form">
+        <div class="ordering__form-block">
+          <label class="ordering__label">
+            <span class="ordering__required">*</span>
+            <input type="text" class="ordering__input" name="last-name" placeholder="Фамилия" required />
+          </label>
+          <label class="ordering__label">
+            <span class="ordering__required">*</span>
+            <input type="text" class="ordering__input" name="first-name" placeholder="Имя" required />
+          </label>
+          <label class="ordering__label">
+            <span class="ordering__required">*</span>
+            <input type="text" class="ordering__input" name="last-name" placeholder="Отчество" required />
+          </label>
+        </div>
+        <div class="ordering__form-block">
+          <label class="ordering__label">
+            <span class="ordering__required">*</span>
+            <input
+              type="text"
+              class="ordering__input"
+              name="phone"
+              placeholder="Телефон"
+              inputmode="numeric"
+              required
+            />
+          </label>
+          <label class="ordering__label">
+            <input
+              type="text"
+              class="ordering__input"
+              name="additional-phone"
+              placeholder="Дополнительный телефон"
+              inputmode="numeric"
+            />
+          </label>
+          <label class="ordering__label">
+            <input type="text" class="ordering__input" name="email" placeholder="E-mail" inputmode="email" />
+          </label>
+          <label class="ordering__label">
+            <input type="text" class="ordering__input" name="city" placeholder="Город" />
+          </label>
+          <label class="ordering__label">
+            <input type="text" class="ordering__input" name="address" placeholder="Адрес" />
+          </label>
+          <label class="ordering__label">
+            <input type="text" class="ordering__input" name="comment" placeholder="Коментарии" />
+          </label>
+        </div>
+      </form>
+      <div class="ordering__info">
+        <span class="ordering__required ordering__required--static">*</span>
+        Поле обязательно для заполнения
+      </div>
+    </div>
+    <div class="ordering__right">
+      <div class="ordering__questions">
+        <img loading="lazy" src="./img/icons/ordering/email-icon.svg" width="26" height="17" alt="Почта" />
+        по любым вопросам обращатся
+        <a href="mailto:info@ndt-innovation.ru" class="ordering__email">info@ndt-innovation.ru</a>
+      </div>
+      <button form="ordering" type="submit" class="ordering__btn more-button">перейти к оформлению</button>
+    </div>
+  </div>
+</div>
